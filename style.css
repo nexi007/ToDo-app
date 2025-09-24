@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: blue;
+}
+
+#taskInput {
+  padding: 8px;
+  width: 200px;
+}
+
+#addBtn {
+  padding: 8px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.deleteBtn {
+  margin-left: 10px;
+  color: red;
+  cursor: pointer;
+}
