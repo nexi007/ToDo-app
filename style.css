@@ -4,29 +4,52 @@ body {
 }
 
 h1 {
-  color: blue;
+  color: #1a73e8;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
 }
 
 #taskInput {
   padding: 8px;
-  width: 200px;
+  width: 260px;
 }
 
 #addBtn {
   padding: 8px 12px;
-  margin-left: 5px;
   cursor: pointer;
+}
+
+#message {
+  margin: 6px 0;
+  padding: 6px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#message.hidden {
+  display: none;
+}
+
+#message.error {
+  background: #ffecec;
+  color: #b00020;
+  border: 1px solid #f5c6c6;
 }
 
 #taskList {
   list-style: none;
   padding: 0;
-  margin-top: 15px;
+  margin-top: 12px;
+  max-width: 420px;
 }
 
 li {
   padding: 8px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,10 +58,14 @@ li {
 li.done {
   text-decoration: line-through;
   color: gray;
+  opacity: 0.8;
 }
 
 .deleteBtn {
   margin-left: 10px;
-  color: red;
+  color: #c00;
   cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 16px;
 }
