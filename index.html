@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <title>ToDo App</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>My ToDo List</h1>
+  <h1>Min ToDo-lista</h1>
 
-  <input type="text" id="taskInput" placeholder="Write a task...">
-  <button id="addBtn">Add Task</button>
+  <div class="input-row">
+    <input type="text" id="taskInput" placeholder="Skriv en uppgift...">
+    <button id="addBtn">Lägg till</button>
+  </div>
 
-  <p id="counter">Done tasks: 0</p>
+  <!-- Här visar vi fel/info-meddelanden i DOM -->
+  <p id="message" aria-live="polite" class="hidden"></p>
+
+  <p id="counter">Slutförda uppgifter: 0</p>
 
   <ul id="taskList"></ul>
 
